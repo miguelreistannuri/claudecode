@@ -44,6 +44,7 @@ end
 local function registrar(objeto)
 	if ehBola(objeto) then
 		bolas[objeto] = { posicao = objeto.Position, tempo = os.clock() }
+		print("[CameraNaBola] bola encontrada:", objeto:GetFullName())
 	end
 end
 
@@ -61,8 +62,10 @@ local function seguir(bola)
 	inicioSeguir = os.clock()
 	paradaDesde = nil
 	workspace.CurrentCamera.CameraSubject = bola
+	print("[CameraNaBola] seguindo a bola:", bola:GetFullName())
 end
 
+print("[CameraNaBola] script ligado")
 for _, objeto in workspace:GetDescendants() do
 	registrar(objeto)
 end
