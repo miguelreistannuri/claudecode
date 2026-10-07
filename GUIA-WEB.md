@@ -68,8 +68,9 @@ Não se preocupe: esse arquivo não vai para o GitHub (o projeto já está confi
    estiver trabalhando. Para desligar, feche a janela.
 2. No Roblox Studio, abra o seu jogo (ou crie um novo a partir de **Baseplate**).
 3. Na aba **Plugins**, clique em **Rojo** e depois em **Connect**.
-4. Pronto! No **Explorer**, em **ServerScriptService**, deve aparecer a pasta **Server** com o
-   script **Moedas**. Aperte **Play**: o placar **Moedas** aparece no canto da tela. ✅
+4. Pronto! No **Explorer**, em **StarterPlayer ⟩ StarterPlayerScripts**, deve aparecer a pasta
+   **Client** com o script **BoasVindas**. Aperte **Play**: na janela **Output** aparece
+   "Bem-vindo, (seu nome)!". ✅
 
 ---
 
@@ -78,7 +79,7 @@ Não se preocupe: esse arquivo não vai para o GitHub (o projeto já está confi
 1. Abra o GitHub Desktop, o Studio, e deixe o `rojo serve` rodando (Passo 4).
    No Studio: **Plugins ⟩ Rojo ⟩ Connect**.
 2. Peça o que quiser ao Claude na web, por exemplo:
-   *"Faça as moedas aumentarem 1 a cada 10 segundos para cada jogador."*
+   *"Faça o jogador ganhar $1 a cada 10 segundos."*
 3. Quando o Claude disser que enviou (fez "push"), vá ao GitHub Desktop e clique em
    **Fetch origin** e depois em **Pull origin**.
 4. O Rojo atualiza o Studio sozinho em segundos. Aperte **Play** para testar.

@@ -129,10 +129,10 @@ O MCP só fica disponível numa sessão nova. Explique isso ao usuário e peça:
 
 ### Passo 8 — Testar tudo
 
-1. Pelo MCP, confirme que existe `ServerScriptService.Server.Moedas` (veio do Rojo).
+1. Pelo MCP, confirme que existe `StarterPlayer.StarterPlayerScripts.Client.BoasVindas` (veio do Rojo).
 2. Pelo MCP, crie uma peça de teste chamada `TesteClaude` no Workspace e peça ao usuário para vê-la.
-3. Inicie um playtest solo pelo MCP, confira nos logs que não há erros e que o jogador recebeu
-   `leaderstats.Moedas`. Pare o playtest.
+3. Inicie um playtest solo pelo MCP, confira nos logs que não há erros e que apareceu
+   "Bem-vindo, ...". Pare o playtest.
 4. Apague a peça `TesteClaude`.
 5. Se algo falhar, diagnostique e explique em linguagem simples.
 
