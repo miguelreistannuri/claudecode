@@ -1,0 +1,7 @@
+# Programa do Rojo baixado para a pasta do projeto
+rojo
+rojo.exe
+# Arquivos de place gerados localmente
+*.rbxl
+*.rbxlx
+*.lock

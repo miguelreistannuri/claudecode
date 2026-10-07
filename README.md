@@ -4,6 +4,8 @@ Este guia conecta o **Claude Code** ao **Roblox Studio**. Depois disso, você po
 coisas como "crie um checkpoint que salva o progresso do jogador", e o Claude cria os scripts e os
 objetos direto no seu jogo aberto no Studio.
 
+> 🌐 **Prefere usar o Claude pela web, com o GitHub Desktop?** Siga o [GUIA-WEB.md](GUIA-WEB.md).
+
 A peça que faz essa ponte se chama **MCP**. Vamos instalar tudo em 5 passos.
 Faça na ordem, **no mesmo computador onde você usa o Roblox Studio**.
 
