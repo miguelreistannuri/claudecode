@@ -3,7 +3,7 @@
     "robloxstudio": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "robloxstudio-mcp@latest"]
+      "args": ["-y", "@chrrxs/robloxstudio-mcp@latest", "--auto-install-plugin"]
     }
   }
 }

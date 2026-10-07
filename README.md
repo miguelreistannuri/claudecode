@@ -18,29 +18,33 @@ inspecionar o Explorer, inserir instâncias, rodar código e testar o jogo.
 Se usar esta opção, você pode remover a entrada `robloxstudio` de `.mcp.json`
 para não ter dois servidores ativos ao mesmo tempo.
 
-## Opção B — `robloxstudio-mcp` (comunidade, já configurado neste repositório)
+## Opção B — `@chrrxs/robloxstudio-mcp` (comunidade, já configurado neste repositório)
+
+Fork mantido do `robloxstudio-mcp`, com mais ferramentas: rodar Luau no modo edição e em
+playtests (servidor/cliente), iniciar/parar playtests solo e multiplayer, ler logs, capturas
+de tela, profiler, buscar e inserir assets da Creator Store, e consultar a documentação da API.
 
 Pré-requisito: [Node.js](https://nodejs.org) 18+ (para o `npx`).
 
-1. Baixe o plugin do Studio (`MCPPlugin.rbxmx`) nas
-   [releases do robloxstudio-mcp](https://github.com/boshyxd/robloxstudio-mcp/releases)
-   e copie para a pasta de plugins do Studio:
-   - Windows: `%LOCALAPPDATA%\Roblox\Plugins`
-   - macOS: `~/Documents/Roblox/Plugins`
-2. No Studio: **Game Settings ⟩ Security ⟩ Allow HTTP Requests** = ligado.
-3. Clone este repositório e rode `claude` dentro da pasta. Aprove o servidor
+1. No Studio: **Game Settings ⟩ Security ⟩ Allow HTTP Requests** = ligado.
+2. Clone este repositório e rode `claude` dentro da pasta. Aprove o servidor
    `robloxstudio` quando o Claude Code perguntar (vem do `.mcp.json`).
-4. Clique no botão do plugin no Studio; ele deve mostrar **Connected**.
+   A flag `--auto-install-plugin` instala o plugin do Studio automaticamente.
+3. Feche e reabra o Roblox Studio. Quando o plugin mostrar **Connected**, está pronto.
+
+Para instalar só o plugin manualmente: `npx -y @chrrxs/robloxstudio-mcp@latest --install-plugin`.
 
 No Windows nativo (fora do WSL), se o `npx` falhar, troque o comando em `.mcp.json` por:
 
 ```json
 "command": "cmd",
-"args": ["/c", "npx", "-y", "robloxstudio-mcp@latest"]
+"args": ["/c", "npx", "-y", "@chrrxs/robloxstudio-mcp@latest", "--auto-install-plugin"]
 ```
 
-Alternativa sem o `.mcp.json`:
-`claude mcp add robloxstudio -- npx -y robloxstudio-mcp@latest`
+Alternativa sem o `.mcp.json` (vale para todos os seus projetos com `--scope user`):
+`claude mcp add robloxstudio -- npx -y @chrrxs/robloxstudio-mcp@latest --auto-install-plugin`
+
+Quer só leitura (sem editar a place)? Use o pacote `@chrrxs/robloxstudio-mcp-inspector`.
 
 ## Segurança
 
